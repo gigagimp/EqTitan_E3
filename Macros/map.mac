@@ -1,0 +1,19 @@
+	Sub Main
+	/echo Checking if MQ2Map is even loaded
+	/if (${Plugin[MQ2Map].Name.NotEqual[mq2map]}) {
+		/squelch /plugin MQ2Map
+		/echo Loaded MQ2Map
+	}
+	/squelch /mapfilter all show
+	/squelch /mapfilter npc show
+	/squelch /mapfilter npcconcolor show
+	/squelch /mapfilter corpse show
+	/squelch /mapfilter pc show
+	/squelch /mapfilter target show
+	/squelch /mapfilter targetline show
+	/squelch /mapfilter normallabel show
+	/mapfilter ground color 255 0 255
+	/echo Mapfilter is now set properly
+
+	/return
+|  [+++  Formatted by MQ2fusing tabs for indents +++]
